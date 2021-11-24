@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <Inputsearch></Inputsearch>
+  <view>
+    <swiper class="swiper" autoplay="true" interval="5000" indicator-dots indicator-color="rgba(255,255,255,.5)"
+      indicator-active-color="#eb5540" duration="500" circular>
+      <swiper-item wx:key="goods_id" wx:for="{{swiperList}}">
+        <navigator>
+          <image src="{{item.image_src}}" class="img" mode="widthFix"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="navigate">
+    <navigator class="nav" wx:key="name" wx:for="{{navigateList}}">
+      <image mode="widthFix" src="{{item.image_src}}" class="navimg"></image>
+    </navigator>
+  </view>
+  <view>
+    <view class="container"
+    wx:key="index"
+    wx:for="{{levList}}">
+      <view class="head">
+        <image mode="widthFix" src="{{item.floor_title.image_src}}"></image>
+      </view>
+      <view class="content">
+        <navigator class="asd"
+        wx:key="name"
+        wx:for="{{item.product_list}}"
+        wx:for-item="site"
+        wx:for-index="index_c">
+          <image mode="{{index_c==0?'widthFix':'scaleTofill'}}" src="{{site.image_src}}"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

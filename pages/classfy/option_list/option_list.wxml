@@ -1,0 +1,20 @@
+<view>
+  <Inputsearch></Inputsearch>
+  <tabs tabs="{{tabs}}" binditem="itemChange"></tabs>
+  <view>
+  <!-- <scroll-view scroll-y class="container" refresher-enabled bindrefresherrefresh="refresh" refresher-triggered="{{isActive}}"> -->
+    <view wx:if="{{index==0}}">
+      <navigator class="tab_first" wx:for="{{goods}}" wx:key="index" url="./goods/goods?goods_id={{item.goods_id}}">
+        <view class="img"><image src="{{item.goods_big_logo?item.goods_big_logo:'http://image1.suning.cn/uimg/b2c/newcatentries/0000000000-000000000147767325_1_800x800.jpg'}}" mode="widthFix"></image></view>
+        <view class="right">
+          <view class="name">{{item.goods_name}}</view>
+          <view class="price">¥{{item.goods_price}}</view>
+        </view>
+      </navigator>
+    </view>
+    <view wx:elif="{{index==1}}">1</view>
+  <view wx:else>2</view>
+  <!-- </scroll-view> -->
+  </view>
+
+</view>

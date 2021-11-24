@@ -1,0 +1,33 @@
+<view>
+  <view>
+    <swiper class="swiper" indicator-dots="true" indicator-color="rgba(200,200,200,.5)" indicator-active-color="#eb5540" autoplay="true" circular="true" interval="5000">
+      <swiper-item wx:for="{{goodsList.pics}}" wx:key="index" bindtap="preimg" data-index="{{index}}">
+        <image mode="widthFix" src="{{item.pics_mid}}"></image>
+      </swiper-item>
+    </swiper>
+    <view class="head">
+      <text class="price">¥ {{goodsList.goods_price}}</text>
+      <view class="header">
+        <view class="title">{{goodsList.goods_name}}</view>
+        <view class="shouchang">
+        <image mode="widthFix" src="../../../../img/shoucang.png"></image>
+        <view>收藏</view>
+        </view>
+      </view>
+    </view>
+    <view class="content_head">原文详情</view>
+    <view><rich-text nodes="{{goodsList.goods_introduce}}"></rich-text></view>
+  </view>
+  <view class="bottom">
+  <view class="left">
+    <view class="contect" wx:for="{{bottom}}" wx:key="index" data-index="{{index}}" bindtap="event">
+      <view class="iconfont {{item.class}}"></view>
+      <view class="bo">{{item.title}}</view>
+    </view>
+  </view>
+  <view class="right">
+    <view class="add" bindtap="addcart">加入购物车</view>
+    <view class="buy">立即购买</view>
+  </view>
+  </view>
+</view>

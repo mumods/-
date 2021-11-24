@@ -1,0 +1,15 @@
+.head{
+  display: flex;
+  flex-direction: row;
+}
+.head_item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 15rpx 0;
+}
+.active{
+  color: #eb5540;
+  border-bottom: 4rpx solid #eb5540;
+}

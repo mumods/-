@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "Inputsearch":"../components/Inputsearch/Inputsearch"
+  },
+    "navigationBarBackgroundColor": "#eb5540",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "首页",
+    "backgroundColor": "#fff",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+}

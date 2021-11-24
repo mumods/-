@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Inputsearch":"../components/Inputsearch/Inputsearch"
+  },
+    "navigationBarTitleText": "商品分类",
+    "backgroundColor": "#eeeeee"
+}

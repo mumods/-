@@ -1,0 +1,101 @@
+.swiper{
+  width: 100%;
+  height: 450rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.swiper image{
+  width: 450rpx;
+}
+.head{
+  margin-top: 20rpx;
+}
+.price{
+  color: red;
+  font-size: 38rpx;
+  margin-left: 20rpx;
+}
+.header{
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  display: flex;
+  font-size: 25rpx;
+  padding: 20rpx;
+  border-bottom: 15rpx solid rgba(240,240,240,.8);
+}
+.title{
+  width: 85%;
+  font-size: 26rpx;
+  display:-webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  border-right: 4rpx solid #ddd;
+  padding-right: 10rpx;
+}
+.shouchang{
+  display: flex;
+  width: 15%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.shouchang view{
+  font-size: 23rpx;
+}
+.shouchang image{
+  width: 35rpx;
+  text-align: center;
+}
+.content_head{
+  color: red;
+  font-size: 38rpx;
+  padding: 20rpx;
+  font-weight: 400;
+  border-bottom: 7rpx solid #aaa;
+}
+.bottom{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  bottom:0;
+  
+}
+.left{
+  display: flex;
+  width: 50%;
+  height: 100rpx;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+}
+.contect{
+  flex: 1;
+  font-size: 38rpx;
+}
+.bo{
+  font-size: 20rpx;
+}
+.right{
+  width: 50%;
+  height: 100rpx;
+  display: flex;
+  text-align: center;
+  color: #fff;
+}
+.add{
+  width: 50%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 33rpx;
+  background-color: #FFa500;
+}
+.buy{
+  width: 50%;
+  line-height: 100rpx;
+  font-size: 33rpx;
+  height: 100rpx;
+  background-color: #FF0000;
+}
